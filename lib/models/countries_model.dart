@@ -5,7 +5,8 @@ import 'package:http/http.dart' as http;
 List<String> sampleData = ['India', 'US', 'China', 'Pakistan'];
 
 class CurrencyService {
-  static const String apiKey = "39e013fb22da88f9830f1b8e";
+  static const String apiKey =
+      'YOUR_API_KEY_HERE'; // replace with your actual key
   static const String baseURL = "https://v6.exchangerate-api.com/v6";
 
   Future<Map<String, dynamic>> fetchCurrencies() async {
