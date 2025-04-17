@@ -9,7 +9,6 @@ class MainBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Spacer(
@@ -25,7 +24,8 @@ class MainBody extends StatelessWidget {
         const Spacer(),
         const Text(
           "Welcome!",
-          style: TextStyle(color: Colors.black, fontSize: 18),
+          style: TextStyle(
+              color: Colors.black, fontSize: 18, fontWeight: FontWeight.w500),
         ),
         const SizedBox(
           height: kDefaultPadding,
@@ -48,8 +48,9 @@ class MainBody extends StatelessWidget {
           height: kDefaultPadding,
         ),
         const Text(
-          "Let's Get Started!",
-          style: TextStyle(color: Colors.black, fontSize: 18),
+          "Let's start!",
+          style: TextStyle(
+              color: Colors.black, fontSize: 18, fontWeight: FontWeight.w500),
         ),
         const Spacer(
           flex: 2,
@@ -58,3 +59,24 @@ class MainBody extends StatelessWidget {
     );
   }
 }
+
+
+// DropdownButton<String>(
+//               value: selectedValue,
+//               padding: const EdgeInsets.all(4),
+//               underline: const SizedBox(),
+//               isExpanded: true,
+//               hint: const Text('Select country'),
+//               icon: const Icon(
+//                 Icons.arrow_drop_down_rounded,
+//                 size: 40,
+//               ),
+//               items: dropdownItems
+//                   .map(
+//                     (e) => DropdownMenuItem<String>(
+//                       value: e,
+//                       child: Text(e),
+//                     ),
+//                   )
+//                   .toList(),
+//               onChanged: (String? val) => onChanged!(val)),

@@ -8,7 +8,7 @@ class WelcomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      body: MainBody(),
+      body: Center(child: MainBody()),
     );
   }
 }
