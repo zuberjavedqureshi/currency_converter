@@ -4,7 +4,9 @@ import 'package:currency_converter_app/models/country_info_model.dart';
 import 'package:http/http.dart' as http;
 
 class CurrencyService {
-  static const String apiKey = "39e013fb22da88f9830f1b8e";
+  static const String apiKey = String.fromEnvironment(
+  'EXCHANGE_RATE_API_KEY',
+);
   static const String baseURL = "https://v6.exchangerate-api.com/v6";
   final url = Uri.parse("$baseURL/$apiKey/latest/USD");
 
